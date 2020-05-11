@@ -1,0 +1,22 @@
+﻿<Window x:Class="MVP_Tema1.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVP_Tema1"
+        mc:Ignorable="d"
+        Title="About" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="txtAboutMe" HorizontalAlignment="Left" Height="44" TextWrapping="Wrap" Text="Made by Radu Virgil Andrei " VerticalAlignment="Top" Width="446" Margin="167,33,0,0" FontSize="24" TextAlignment="Center" ClipToBounds="True" BorderBrush="{x:Null}" IsReadOnly="True" FontWeight="Bold" Background="{x:Null}" SelectionBrush="#FF14A0BF"/>
+        <TextBox x:Name="txtSystemInfo" TextWrapping="Wrap" Text="System Info " Margin="26,178,30,25" FontSize="22" TextChanged="txtSystemInfo_TextChanged" IsReadOnly="True" FontWeight="Bold" BorderBrush="{x:Null}" SelectionBrush="#FF14A0BF"/>
+        <TextBlock x:Name="txtLink" HorizontalAlignment="Left" Height="35" Margin="248,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282">
+            <Hyperlink NavigateUri="https://intranet.unitbv.ro/Radu_Virgil_Andrei" RequestNavigate="txtLink_Click">
+                https://intranet.unitbv.ro/Radu_Virgil_Andrei
+   
+            </Hyperlink>
+
+        </TextBlock>
+
+    </Grid>
+</Window>
